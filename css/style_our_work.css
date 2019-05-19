@@ -61,18 +61,9 @@ nav ul li a:hover {
     color: #FFC04C;
 }
 
-#logo {
-	z-index: 10;
-	display: block;
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10%;
-}
-
 #box {
 	width: 60%;
-	height: 120%;
+	height: 80%;
 	background-color: #ffffff;
 	position: absolute;
 	z-index: 1;
@@ -92,37 +83,6 @@ h1 {
 	margin-left: 23%;
 	position: absolute;
 	
-}
-
-#beschreibung {
-	font-family: "Qanelas Soft DEMO UltraLight";
-	font-size: 100%;
-	font-weight: 700;
-	z-index: 4;
-	position: absolute;
-	margin-top: 12.5%;
-	margin-left: 23%;
-	margin-right: 52%;
-	text-align: justify;
-}
-
-#signetnegativ {
-	position: absolute;
-	z-index: 2;
-	width: 12%;
-	margin-top: 10%;
-	margin-left: 58%;
-}
-
-#offerings {
-	font-family: "Qanelas Soft DEMO ExtraBold", "Qanelas Soft DEMO UltraLight";
-	font-weight: bold;
-	font-size: 200%;
-	z-index: 4;
-	position: absolute;
-	top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
@@ -307,85 +267,11 @@ body {
   100% { opacity: 1; }
 }
 
-.buttonorder {
-  background-color: #FF00FF;
-  color: white;
-  padding: 5px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 1vw;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  top: 200%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  position: absolute;
-  font-family: "Qanelas Soft DEMO ExtraBold";
-  border-radius: 100px;
-  border: 3px solid;
-  border-color: #FF00FF;
-}
-
-.buttonorder:hover {
-  color: #FF00FF;
-  background-color: #FFFFFF;
-  border-width: 3px;
-  border-color: #FF00FF;
-  transform: scale(1.2,1.2) translate(-42%, -40%);
-  top: 200%;
-  left: 50%;
-  
-}
-
-
-#offers-logos {
-	position: absolute;
-	z-index: 4;
-	margin-left: 28%;
-	margin-top: 35%;
-	padding-bottom: 8%;
-	cursor: pointer;
-	transition-duration: 0.4s;
-}
-
-#offers-logos:hover {
-	content: url("../img/icons-offers/logos-hover.png");
-}
-
-#offers-prints {
-	position: absolute;
-	z-index: 4;
-	display: block;
-	margin-top: 35%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-#offers-prints:hover {
-	content: url("../img/icons-offers/print-hover.png");
-}
-
-#offers-complete-set {
-	position: absolute;
-	z-index: 4;
-	margin-left: 60.5%;
-	margin-top: 35%;
-}
-
-#offers-complete-set:hover {
-	content: url("../img/icons-offers/complete-set-hover.png");
-}
-
-
-
 #carouselExampleIndicators {
-	width: 40%;
+	width: 26%;
 	z-index: 4;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20%;
+	margin-left: 51%;
+	margin-top: 12.5%;
 }
 
 

@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+
+#titel-order {
+	z-index: 4;
+	margin-top: 8%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+	display: block;
+}
+
+
 #background {
 	position: fixed;
 	right: 0;
@@ -60,12 +71,12 @@ nav ul li a:hover {
 
 #box {
 	width: 60%;
-	height: 120%;
+	height: 80%;
 	background-color: #ffffff;
 	position: absolute;
 	z-index: 1;
 	margin-left: 20%;
-	margin-top: 18%;
+	margin-top: 24%;
 	margin-bottom: 5%;
 	
 }
@@ -82,37 +93,6 @@ h1 {
 	
 }
 
-#beschreibung {
-	font-family: "Qanelas Soft DEMO UltraLight";
-	font-size: 100%;
-	font-weight: 700;
-	z-index: 4;
-	position: absolute;
-	margin-top: 12.5%;
-	margin-left: 23%;
-	margin-right: 52%;
-	text-align: justify;
-}
-
-#signetnegativ {
-	position: absolute;
-	z-index: 2;
-	width: 12%;
-	margin-top: 10%;
-	margin-left: 58%;
-}
-
-#offerings {
-	font-family: "Qanelas Soft DEMO ExtraBold", "Qanelas Soft DEMO UltraLight";
-	font-weight: bold;
-	font-size: 200%;
-	z-index: 4;
-	position: absolute;
-	top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 body {
 	background: #333;
@@ -127,7 +107,7 @@ body {
 .mouse_scroll {
 	width: 24px;
 	height: 100px;
-	margin-top: 5%;
+	margin-top: 7.3%;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 20;
@@ -328,43 +308,65 @@ body {
 }
 
 
-#offers-logos {
+.border-box {
+	font-family: "Qanelas Soft DEMO ExtraBold", "Qanelas Soft DEMO UltraLight";
+	border-radius: 10px;
+ 	border: 3px solid;
+ 	border-color: #FF00FF;
+	
+}
+
+#order-formular {
+	font-family: "Qanelas Soft DEMO ExtraBold";
+	margin-left: 23%;
+	margin-top: 14%;
+	font-size: 1.2vw;
+	z-index: 10;
 	position: absolute;
-	z-index: 4;
-	margin-left: 28%;
-	margin-top: 35%;
-	padding-bottom: 8%;
-	cursor: pointer;
-	transition-duration: 0.4s;
 }
 
-#offers-logos:hover {
-	content: url("../img/icons-offers/logos-hover.png");
+#order-button {
+  background-color: #FF00FF;
+  color: white;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 0.8vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  position: absolute;
+  font-family: "Qanelas Soft DEMO ExtraBold";
+  border-radius: 100px;
+  border: 3px solid;
+  border-color: #FF00FF;
+  top: 105%;
+  left: 31.5%
 }
 
-#offers-prints {
-	position: absolute;
-	z-index: 4;
-	display: block;
-	margin-top: 35%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+#order-button:hover {
+  color: #FF00FF;
+  background-color: #FFFFFF;
+  border-width: 3px;
+  border-color: #FF00FF;
+  transform: scale(1.2,1.2) translate(-42%, -40%);
+  
 }
 
-#offers-prints:hover {
-	content: url("../img/icons-offers/print-hover.png");
-}
 
-#offers-complete-set {
-	position: absolute;
-	z-index: 4;
-	margin-left: 60.5%;
-	margin-top: 35%;
-}
 
-#offers-complete-set:hover {
-	content: url("../img/icons-offers/complete-set-hover.png");
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
