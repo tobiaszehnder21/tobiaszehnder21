@@ -1,22 +1,35 @@
 @charset "utf-8";
 
 
-#titel-order {
-	z-index: 4;
-	margin-top: 8%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 35%;
-	display: block;
+#background-layer {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
 }
 
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
 
 #background {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-height: 100%;
-	min-width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 1070px;
+	max-width: 100%;
 	z-index: -10;
 }
 
@@ -24,7 +37,6 @@
 /* NAVIGATION */
 header {
 	height: 5%;
-	background-color: #ffffff;
 	width: 100%;
 	z-index: 10;	
 	position: fixed;
@@ -36,7 +48,7 @@ header {
 
 .menu {
 	padding: 0.3% 0 2% 0;
-	text-align: center;
+	text-align: right;
 	line-height: 1.5vw;
 	}
 
@@ -44,239 +56,64 @@ ul.menu {margin-top: 0.1%;
 }
 
 .menu li {display: inline; 
-	padding: 0 40px 0 40px;
-	font-size:1vw;
+	padding: 0 60px 0 40px;
+	font-size:0.9vw;
 	letter-spacing: 0.05em
 }
 
 .menu a {text-decoration: none;
-    color: #FF00FF;
+    color: #FFFFFF;
+	opacity: 0.8;
 	padding: 8px;
-	font-family: 'Qanelas Soft DEMO ExtraBold';
+	font-family: "Qanelas Soft DEMO UltraLight";
 	font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #FFC04C;
+    opacity: 1;
 }
 
-#logo {
-	z-index: 10;
-	display: block;
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10%;
-}
 
-#box {
-	width: 60%;
-	height: 80%;
-	background-color: #ffffff;
-	position: absolute;
-	z-index: 1;
-	margin-left: 20%;
-	margin-top: 24%;
-	margin-bottom: 5%;
-	
-}
 
 
 h1 {
-	font-family: "Qanelas Soft DEMO ExtraBold", "Qanelas Soft DEMO UltraLight";
+	font-family: "Qanelas Soft DEMO ExtraBold";
 	font-weight: bold;
-	font-size: 200%;
+	font-size: 300%;
+	color: #1e1e1e;
 	z-index: 4;
-	margin-top: 10%;
-	margin-left: 23%;
+	margin-top: 60%;
+	margin-left: 8.3%;
 	position: absolute;
 	
 }
 
 
 body {
-	background: #333;
+	background: #FFFFFF;
 }
 
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
-
-
-.mouse_scroll {
-	width: 24px;
-	height: 100px;
-	margin-top: 7.3%;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 20;
-	display: block;
+form {
+	color: #1e1e1e;
+	width: 30%;
+	margin-top: 63%;
+	margin-left: 8.3%;
+	position: absolute;
+	font-family: 'Qanelas Soft DEMO UltraLight';
 }
 
-
-.m_scroll_arrows
-{
-  display: block;
-  width: 5px;
-  height: 5px;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-   
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  margin: 0 0 3px 4px;
-  
-   height: 16px;
- width: 16px;
+.row {
+	padding-bottom: 14px;
+	color: #1e1e1e;
+	font-family: "Qanelas Soft DEMO UltraLight"
 }
 
-
-.unu
-{
-  margin-top: 1px;
-}
-
-.unu, .doi, .trei
-{
-    -webkit-animation: mouse-scroll 1s infinite;
-    -moz-animation: mouse-scroll 1s infinite;
-    animation: mouse-scroll 1s infinite;
-  
-}
-
-.unu
-{
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
-  -webkit-animation-direction: alternate;
-  
-  animation-direction: alternate;
-  animation-delay: alternate;
-}
-
-.doi
-{
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;
-  
-  animation-delay: .2s;
-  animation-direction: alternate;
-  
-  margin-top: -6px;
-}
-
-.trei
-{
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
-  -webkit-animation-direction: alternate;
-  
-  animation-delay: .3s;
-  animation-direction: alternate;
-  
-  
-  margin-top: -6px;
-}
-
-.mouse {
-  height: 42px;
-  width: 24px;
-  border-radius: 14px;
-  transform: none;
-  border: 2px solid white;
-  top: 170px;
-}
-
-.wheel {
-  height: 5px;
-  width: 2px;
-  display: block;
-  margin: 5px auto;
-  background: white;
-  position: relative;
-  
-  height: 4px;
-  width: 4px;
-  border: 2px solid #fff;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
-}
-
-.wheel {
-  -webkit-animation: mouse-wheel 0.6s linear infinite;
-  -moz-animation: mouse-wheel 0.6s linear infinite;
-  animation: mouse-wheel 0.6s linear infinite;
-}
-
-@-webkit-keyframes mouse-wheel{
-   0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
-@-moz-keyframes mouse-wheel {
-  0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
-}
-@-o-keyframes mouse-wheel {
-
-   0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
-}
-@keyframes mouse-wheel {
-
-   0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
-}
-
-@-webkit-keyframes mouse-scroll {
-
-  0%   { opacity: 0;}
-  50%  { opacity: .5;}
-  100% { opacity: 1;}
-}
-@-moz-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-@-o-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-@keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+label {
+	font-family: "Qanelas Soft DEMO ExtraBold", "Qanelas Soft DEMO UltraLight";
 }
 
 .buttonorder {
-  background-color: #FF00FF;
+  background-color: #a693ef;
   color: white;
   padding: 5px 80px;
   text-align: center;
@@ -285,89 +122,53 @@ body {
   font-size: 1vw;
   transition-duration: 0.4s;
   cursor: pointer;
-  top: 200%;
-  left: 50%;
+  top: 173%;
+  left: 14%;
   transform: translate(-50%, -50%);
   z-index: 10;
   position: absolute;
   font-family: "Qanelas Soft DEMO ExtraBold";
   border-radius: 100px;
   border: 3px solid;
-  border-color: #FF00FF;
+  border-color: #a693ef;
 }
 
 .buttonorder:hover {
-  color: #FF00FF;
+  color: #a693ef;
   background-color: #FFFFFF;
   border-width: 3px;
-  border-color: #FF00FF;
+  border-color: #a693ef;
   transform: scale(1.2,1.2) translate(-42%, -40%);
-  top: 200%;
-  left: 50%;
+  top: 173%;
+  left: 14%;
   
 }
 
-
-.border-box {
-	font-family: "Qanelas Soft DEMO ExtraBold", "Qanelas Soft DEMO UltraLight";
-	border-radius: 10px;
- 	border: 3px solid;
- 	border-color: #FF00FF;
-	
-}
-
-#order-formular {
-	font-family: "Qanelas Soft DEMO ExtraBold";
-	margin-left: 23%;
-	margin-top: 14%;
-	font-size: 1.2vw;
-	z-index: 10;
+#background-bottom {
 	position: absolute;
+	left: 0;
+	margin-top: 60%;
+	height: 1070px;
+	max-width: 100%;
+	z-index: -9;
 }
 
-#order-button {
-  background-color: #FF00FF;
-  color: white;
-  padding: 2px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 0.8vw;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+
+#background-layer-bottom {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
   position: absolute;
-  font-family: "Qanelas Soft DEMO ExtraBold";
-  border-radius: 100px;
-  border: 3px solid;
-  border-color: #FF00FF;
-  top: 105%;
-  left: 31.5%
+  margin-top: 60%;
+  left: 0;
+  z-index: -9;
 }
-
-#order-button:hover {
-  color: #FF00FF;
-  background-color: #FFFFFF;
-  border-width: 3px;
-  border-color: #FF00FF;
-  transform: scale(1.2,1.2) translate(-42%, -40%);
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

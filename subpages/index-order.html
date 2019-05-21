@@ -10,7 +10,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="../css/style_order.css">
 	<script language="javascript" type="text/javascript" src="js/js_startseite.js"></script>
-	<?php include("php/order-php.php");?>
+
 	
 	
 </head>
@@ -18,7 +18,7 @@
 <body>
 	
 	
-	<img id="titel-order" src="../img/order/titel-schriftzug.png" alt="our work">
+	<img src="../img/order/layer-img-background.png" id="background-layer" alt="background">
 	<video autoplay="autoplay" loop id="background">
 			<source src="../img/background.mp4" type="video/mp4">
 	</video>
@@ -42,65 +42,45 @@
 </header>
 		
 	
-	<div id="box"></div>
-	<div class="mouse_scroll">
+<h1>To order:</h1>
 
-		<div class="mouse">
-			<div class="wheel"></div>
-		</div>
-		<div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-			<span class="m_scroll_arrows trei"></span>
-		</div>
-</div>
-<div id="order-formular">	
-	<form action="../php/order-php.php" method="post">
-	<table border="0" cellspacing="0" cellpadding="2">
-	  <tbody>
-		<tr>
-		  <td>Product:</td>
-		  <td>
-			<select name="Product" class="border-box">
-			  <option value="Logo">Logo</option>
-			  <option value="Printmedia">Printmedia</option>
-			  <option value="Complete-Set">Complete Set</option>
-			</select>
-		  </td>
-		</tr>
-		<tr>
-		  <td>Company name:</td>
-		  <td>
-			<input name="Nachname" size="45" type="text" class="border-box" />
-		  </td>
-		</tr>
-		<tr>
-		  <td>Email:</td>
-		  <td>
-			<input name="Email" size="45" type="text"  class="border-box" />
-		  </td>
-		</tr>
-		<tr>
-		  <td>Subject:</td>
-		  <td>
-			<input name="Subject" size="45" type="text"  class="border-box" />
-		  </td>
-		</tr>
-		<tr>
-		  <td>Your wishes:</td>
-		  <td><textarea cols="30" rows="5" name="Your wishes" class="border-box">Tell us your wishes...</textarea></td>
-		</tr>
-		<tr>
-		  <td></td>
-		  <td>
-			<input type="submit" value="Submit" id="order-button" />
-		  </td>
-		</tr>
-	  </tbody>
-	</table>
-	</form>
-</div>	
+
+<form>
+	<label for="exampleFormControlInput1">Personal data:</label>
+    <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Choose your product</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Logo</option>
+      <option>Print media</option>
+      <option>The Complete Set</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">What should your product look like?</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">I wish my design to look like...</textarea>
+  </div>
+</form>
 	
+<button class="buttonorder">Submit</button>	
+
+<video autoplay="autoplay" loop id="background-bottom">
+			<source src="../img/background.mp4" type="video/mp4">
+	
+	</video>
+	
+	<img src="../img/background-layer-bottom.png" id="background-layer-bottom" alt="background-bottom">
 	
 	
 </body>
