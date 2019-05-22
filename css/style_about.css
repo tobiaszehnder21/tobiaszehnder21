@@ -1,5 +1,25 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'qanelas_soft_demoextrabold';
+    src: url('../fonts/qanelassoftdemo-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/qanelassoftdemo-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'qanelas_soft_demoultralight';
+    src: url('../fonts/qanelassoftdemo-ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/qanelassoftdemo-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 #titel-about {
 	z-index: 4;
 	margin-top: 8%;
