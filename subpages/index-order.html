@@ -9,7 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="../css/style_order.css">
-	<script language="javascript" type="text/javascript" src="js/js_startseite.js"></script>
+	<script language="javascript" type="text/javascript" src="../js/js_our_work.js"></script>
 
 	
 	
@@ -18,7 +18,7 @@
 <body>
 	
 	
-	<img src="../img/order/layer-img-background.png" id="background-layer" alt="background">
+	<img src="../img/order/layer-img-background.png" id="background-layer" alt="background" class="float-right">
 	<video autoplay="autoplay" loop id="background">
 			<source src="../img/background.mp4" type="video/mp4">
 	</video>
@@ -45,35 +45,36 @@
 <h1>To order:</h1>
 
 
-<form>
-	<label for="exampleFormControlInput1">Personal data:</label>
+<form action="../php/run.php" method="get">
+	<label for="name">Personal data:</label>
     <div class="row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
+      <input type="text" name="name" class="form-control" placeholder="First name" required>
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
+      <input type="text" name="name" class="form-control" placeholder="Last name" required>
     </div>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email address:</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <label for="email">Email address:</label>
+    <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Choose your product</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <label for="product">Choose your product</label>
+    <select class="form-control" name="product" id="exampleFormControlSelect1" required>
       <option>Logo</option>
       <option>Print media</option>
       <option>The Complete Set</option>
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">What should your product look like?</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">I wish my design to look like...</textarea>
+    <label for="text">What should your product look like?</label>
+    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3" placeholder="I wish my design to look like..." required></textarea>
   </div>
 </form>
 	
-<button class="buttonorder">Submit</button>	
+	
+<button name="order" class="buttonorder" type="submit">Submit</button>	
 
 <video autoplay="autoplay" loop id="background-bottom">
 			<source src="../img/background.mp4" type="video/mp4">
@@ -81,7 +82,12 @@
 	</video>
 	
 	<img src="../img/background-layer-bottom.png" id="background-layer-bottom" alt="background-bottom">
-	
+<footer>
+		<p id="email">Contact: toodledesigns@gmail.com</p>
+		<a id="insta" href="https://www.instagram.com/toodledesigns/">Instagram</a>
+		<p id="phone">Phone: CH 0041 76 347 04 21</p>
+		
+</footer>	
 	
 </body>
 </html>
