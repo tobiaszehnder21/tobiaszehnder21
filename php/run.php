@@ -23,6 +23,7 @@ mail($empfanger, $betreff, $nachricht, $header);
 <head>
 <meta charset="utf-8">
 <title>Order recieved</title>
+	<link rel="stylesheet" href="../css/style_run_php.css">
 </head>
 
 <body>
