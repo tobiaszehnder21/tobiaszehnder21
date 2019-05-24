@@ -17,19 +17,25 @@
   z-index: -9;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media screen and (min-aspect-ratio: 16/9) { /* Specific to this particular image */
   img.bg {
     left: 50%;
     margin-left: -512px;   /* 50% */
   }
+	#background {
+		width: 100%;
+		height: auto;
+	}
+	#background-bottom {
+		width: 100%;
+		height: auto;
+	}
 }
 
 #background {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 1070px;
-	max-width: 100%;
 	z-index: -10;
 }
 
@@ -96,7 +102,7 @@ body {
 form {
 	color: #1e1e1e;
 	width: 30%;
-	margin-top: 63%;
+	margin-top: 64%;
 	margin-left: 8.3%;
 	position: absolute;
 	font-family: 'Qanelas Soft DEMO UltraLight';
@@ -148,8 +154,6 @@ label {
 	position: absolute;
 	left: 0;
 	margin-top: 60%;
-	height: 1070px;
-	max-width: 100%;
 	z-index: -9;
 }
 
