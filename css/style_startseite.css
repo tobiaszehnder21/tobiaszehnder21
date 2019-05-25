@@ -163,7 +163,7 @@ body {
   font-size: 1vw;
   transition-duration: 0.4s;
   cursor: pointer;
-  top: 245%;
+  top: 255%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -180,7 +180,7 @@ body {
   border-width: 3px;
   border-color: #a693ef;
   transform: scale(1.2,1.2) translate(-42%, -40%);
-  top: 245%;
+  top: 255%;
   left: 50%;
   
 }
