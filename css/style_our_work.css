@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+@font-face{
+	font-family: "Qanelas Soft DEMO ExtraBold";
+	src: url('../fonts/QanelasSoftDEMO-ExtraBold.otf') format('opentype');
+}
+
+@font-face{
+	font-family: "Qanelas Soft DEMO UltraLight";
+	src: url("../fonts/QanelasSoftDEMO-UltraLight.otf") format("opentype");
+}
 
 #background-layer {
   /* Set rules to fill background */
@@ -17,19 +26,25 @@
   z-index: -9;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media screen and (min-aspect-ratio: 16/9) { /* Specific to this particular image */
   img.bg {
     left: 50%;
     margin-left: -512px;   /* 50% */
   }
+	#background {
+		width: 100%;
+		height: auto;
+	}
+	#background-bottom {
+		width: 100%;
+		height: auto;
+	}
 }
 
 #background {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 1070px;
-	max-width: 100%;
 	z-index: -10;
 }
 
@@ -99,7 +114,7 @@ body {
 	font-weight: 700;
 	z-index: 4;
 	position: absolute;
-	margin-top: 63%;
+	margin-top: 64%;
 	margin-left: 8.3%;
 	margin-right: 45%;
 	text-align: left;
@@ -138,7 +153,7 @@ h2 {
 	font-size: 300%;
 	z-index: 4;
 	position: absolute;
-	top: 175%;
+	top: 178%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -147,8 +162,6 @@ h2 {
 	position: absolute;
 	left: 0;
 	margin-top: 90%;
-	height: 1070px;
-	max-width: 100%;
 	z-index: -9;
 }
 
